@@ -18,18 +18,18 @@ app = Flask(__name__)
 #     conn.commit()
 
 
-@app.route('/send', methods=["POST"])
+@app.route('/send', methods=["GET"])
 def hello():
     data = request.json
-    sender = data["metadata"]["sender"]
-    recipient = data["metadata"]["recipient"]
+    # sender = data["metadata"]["sender"]
+    # recipient = data["metadata"]["recipient"]
     print(request.remote_addr)
 
     # add_user(sender)
     # add_user(recipient, data)
 
     # print(data)
-    return {"status_code": 200, "ip": request.host}
+    return {"status_code": 200, "ip": request.remote_addr}
 
 
 # if __name__ == "__main__":
