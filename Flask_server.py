@@ -25,12 +25,12 @@ def hello():
     recipient = data["metadata"]["recipient"]
     print(request.remote_addr)
 
-    add_user(sender)
-    add_user(recipient, data)
+    # add_user(sender)
+    # add_user(recipient, data)
 
     # print(data)
     return {"status_code": 200, "ip": request.remote_addr}
 
 
-if __name__ == "__main__":
-    app.run()
+# if __name__ == "__main__":
+#     app.run()
