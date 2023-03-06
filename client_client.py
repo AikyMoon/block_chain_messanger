@@ -13,5 +13,6 @@ msg = "hello"
 pk_key = load_key(name)
 msg = Message(name, rec, msg, pk_key)
 
-response = requests.post("http://127.0.0.1:5000/send", json = msg.json)
+response = requests.post("https://school-messanger.onrender.com/send", json = msg.json)
 print(response)
+print(response.json())

@@ -29,7 +29,7 @@ def hello():
     # add_user(recipient, data)
 
     # print(data)
-    return {"status_code": 200, "ip": request.remote_addr}
+    return {"status_code": 200, "ip": request.host}
 
 
 # if __name__ == "__main__":
