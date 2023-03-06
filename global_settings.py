@@ -1,0 +1,1 @@
+TEST_TEXT = "hello, world! I'm robot"
